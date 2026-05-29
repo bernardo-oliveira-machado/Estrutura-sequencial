@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        double altura, pesoIdeal;
+
+        System.out.print("Digite a altura: ");
+        altura = sc.nextDouble();
+
+        pesoIdeal = (62.1 * altura) - 44.7;
+
+        System.out.println("Peso ideal: " + pesoIdeal);
+
+        sc.close();
+    }
+}
