@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int a, b, temp;
+
+        System.out.print("Digite o valor de A: ");
+        a = sc.nextInt();
+
+        System.out.print("Digite o valor de B: ");
+        b = sc.nextInt();
+
+        temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("A = " + a);
+        System.out.println("B = " + b);
+
+        sc.close();
+    }
+}
