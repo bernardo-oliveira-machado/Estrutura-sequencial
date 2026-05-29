@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        double salarioMinimo, salarioFuncionario, quantidade;
+
+        System.out.print("Digite o valor do salário mínimo: ");
+        salarioMinimo = sc.nextDouble();
+
+        System.out.print("Digite o salário do funcionário: ");
+        salarioFuncionario = sc.nextDouble();
+
+        quantidade = salarioFuncionario / salarioMinimo;
+
+        System.out.println("Quantidade de salários mínimos: " + quantidade);
+
+        sc.close();
+    }
+}
